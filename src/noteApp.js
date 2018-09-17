@@ -1,3 +1,3 @@
-function Note() {
-  this.completed = true
+function Note(string) {
+  this.text = string
 }

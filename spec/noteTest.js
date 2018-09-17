@@ -1,11 +1,10 @@
 
+var string = 'My favourite language is JavaScript'
+var testNote = new Note(string)
 
-var testNote = new Note()
 
-
-
-function isNoteCompleted() {
-  assert.isTrue(testNote.completed)
+function hasText() {
+  assert.isTrue(testNote.text === string)
 }
 
-isNoteCompleted()
+hasText()
