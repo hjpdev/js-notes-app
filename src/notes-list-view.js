@@ -13,8 +13,10 @@
   };
 
   NotesListView.prototype.viewNotesList = function() {
-    return this.showNotesList().showNotes();
+    return this.showNotesList().showNotes().forEach(function(element) {
+      <ul><li><div>element.content</div></li></ul>
+    });
   };
-
+  
   exports.notesListView = notesListView;
 })(this);
